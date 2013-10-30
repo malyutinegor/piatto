@@ -58,3 +58,33 @@ If you'd like to use folder icons in the sidebar instead of the regular arrows, 
     "piatto_folder_icons": true
 
 ![Piatto Folder Icons](https://raw.github.com/samuelrafo/Piatto/master/images/screenshot2.png)
+
+### Overlay Scrollbars
+
+If you'd like to use the overlay scrollbar, add the following custom setting to your Settings - User file:
+
+```javascript
+{
+    "overlay_scroll_bars": "enabled"
+}
+```
+
+## Optional
+
+
+### Bold folder labels
+
+```javascript
+{
+    "bold_folder_labels": true
+}
+```
+
+
+### Color Scheme
+
+```javascript
+{
+    "color_scheme": "Packages/Theme - Piatto/Piatto Light.tmTheme"
+}
+```
