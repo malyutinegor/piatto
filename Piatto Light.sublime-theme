@@ -573,18 +573,18 @@
     // Sidebar folder closed
     {
         "class": "disclosure_button_control",
-        "settings": ["Piatto_folder_icons"],
+        "settings": ["piatto_folder_icons"],
         "layer0.texture": "Theme - Piatto/Piatto Light/folder-closed.png"
     },
     {
         "class": "disclosure_button_control",
-        "settings": ["Piatto_folder_icons"],
+        "settings": ["piatto_folder_icons"],
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
         "layer0.texture": "Theme - Piatto/Piatto Light/folder-closed-hover.png"
     },
     {
         "class": "disclosure_button_control",
-        "settings": ["Piatto_folder_icons"],
+        "settings": ["piatto_folder_icons"],
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
         "layer0.texture": "Theme - Piatto/Piatto Light/folder-closed-selected.png"
     },
@@ -609,20 +609,20 @@
     // Sidebar folder open
     {
         "class": "disclosure_button_control",
-        "settings": ["Piatto_folder_icons"],
+        "settings": ["piatto_folder_icons"],
         "attributes": ["expanded"],
         "layer0.texture": "Theme - Piatto/Piatto Light/folder-open.png"
     },
     {
         "class": "disclosure_button_control",
-        "settings": ["Piatto_folder_icons"],
+        "settings": ["piatto_folder_icons"],
         "attributes": ["expanded"],
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
         "layer0.texture": "Theme - Piatto/Piatto Light/folder-open-hover.png"
     },
     {
         "class": "disclosure_button_control",
-        "settings": ["Piatto_folder_icons"],
+        "settings": ["piatto_folder_icons"],
         "attributes": ["expanded"],
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
         "layer0.texture": "Theme - Piatto/Piatto Light/folder-open-selected.png"
@@ -676,7 +676,7 @@
     // Quick panel background
     {
         "class": "overlay_control",
-        "settings": ["!Piatto_retina_fix"],
+        "settings": ["!piatto_retina_fix"],
         "layer0.texture": "Theme - Piatto/Piatto Light/quick-panel-background.png",
         "layer0.inner_margin": [12, 6, 12, 15],
         "layer0.opacity": 1.0,
@@ -688,7 +688,7 @@
     // Quick panel background (Retina fix)
     {
         "class": "overlay_control",
-        "settings": ["Piatto_retina_fix"],
+        "settings": ["piatto_retina_fix"],
         "layer0.tint": [238, 238, 238],
         "layer0.opacity": 1.0,
         "content_margin": [6, 8, 6, 6]
