@@ -6,7 +6,9 @@ Based on Soda Theme by Ian Hill [http://buymeasoda.com/](http://buymeasoda.com/)
 
 ## Design
 
-![Piatto Theme](https://raw.github.com/samuelrafo/Piatto/master/images/screenshot1.png)
+![Piatto Light Theme](https://raw.github.com/samuelrafo/Piatto/master/images/piatto_light.png)
+
+![Piatto Dark Theme](https://raw.github.com/samuelrafo/Piatto/master/images/piatto_dark.png)
 
 ## Installation
 
@@ -46,7 +48,7 @@ To configure Sublime Text to use the theme, follow the instructions below for yo
 **Example Sublime Text 3 User Settings**
 
     {
-        "theme": "Piatto Light 3.sublime-theme"
+        "theme": "Piatto Dark 3.sublime-theme"
     }
 
 ### Sidebar Folder Icons
@@ -57,7 +59,7 @@ If you'd like to use folder icons in the sidebar instead of the regular arrows, 
 
     "piatto_folder_icons": true
 
-![Piatto Folder Icons](https://raw.github.com/samuelrafo/Piatto/master/images/screenshot2.png)
+![Piatto Folder Icons](https://raw.github.com/samuelrafo/Piatto/master/images/piatto_folder_icons.png)
 
 ### Overlay Scrollbars
 
