@@ -10,6 +10,8 @@ Based on Soda Theme by Ian Hill [http://buymeasoda.com/](http://buymeasoda.com/)
 
 ![Piatto Dark Theme](https://raw.github.com/samuelrafo/Piatto/master/images/piatto_dark.png)
 
+![Piatto Mandarine Theme](https://raw.github.com/samuelrafo/Piatto/master/images/piatto_mandarine.png)
+
 ## Installation
 
 Piatto theme is designed to work with the latest development builds of Sublime Text, including [Sublime Text 2](http://www.sublimetext.com/dev) and [Sublime Text 3](http://www.sublimetext.com/3dev).
