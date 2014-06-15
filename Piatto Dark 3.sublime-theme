@@ -28,7 +28,7 @@
     {
         "class": "tabset_control",
         "settings": ["enable_tab_scrolling"],
-        "content_margin": [3, 0, 3, 3]
+        "content_margin": [3, 0, 3, 0]
     },
     {
         "class": "tabset_control",
