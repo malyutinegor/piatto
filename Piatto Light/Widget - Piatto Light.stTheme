@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>author</key>
-	<string>Ian Hill</string>
+	<string>Samuel Rafo</string>
 	<key>comment</key>
 	<string>A widget theme for the UI components of the Piatto Light theme.</string>
 	<key>name</key>
@@ -16,17 +16,17 @@
 				<key>background</key>
 				<string>#FFFFFF</string>
 				<key>caret</key>
-				<string>#000000</string>
+				<string>#f1f1f1</string>
 				<key>foreground</key>
-				<string>#000000</string>
+				<string>#f1f1f1</string>
 				<key>invisibles</key>
 				<string>#E0E0E0</string>
 				<key>lineHighlight</key>
-				<string>#3498DB25</string>
+				<string>#363636</string>
 				<key>selection</key>
-				<string>#57bcff</string>
+				<string>#a4d1ef</string>
 				<key>selectionBorder</key>
-				<string>#8ad0ff00</string>
+				<string>#b5d5ff00</string>
 				<key>inactiveSelection</key>
 				<string>#EDEDED</string>
 			</dict>
@@ -41,7 +41,7 @@
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
-				<string>#0066FF</string>
+				<string>#49a3df</string>
 			</dict>
 		</dict>
 		<dict>

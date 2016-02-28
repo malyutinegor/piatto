@@ -1,11 +1,3 @@
-//
-// THEME: PIATTO LIGHT
-// AUTHOR: SAMUEL RAFO
-// AUTHOR URI: FB.COM/SAMUEL.RAFO
-//
-// Based on Soda Theme by Ian Hill (http://buymeasoda.com)
-//
-
 [
 
 //
@@ -18,12 +10,17 @@
         "layer0.texture": "Theme - Piatto/Piatto Light/tabset-background.png",
         "layer0.inner_margin": [1, 7],
         "layer0.opacity": 1.0,
-        "content_margin": [-3, 0, -3, 0],
+        "content_margin": [-4, 0, -4, 0],
         "tab_overlap": 5,
         "tab_width": 180,
         "tab_min_width": 45,
-        "tab_height": 28,
+        "tab_height": 32,
         "mouse_wheel_switch": false
+    },
+    {
+        "class": "tabset_control",
+        "settings": ["enable_tab_scrolling"],
+        "content_margin": [4, 0, 12, 0]
     },
     {
         "class": "tabset_control",
@@ -33,7 +30,7 @@
     // Tab element
     {
         "class": "tab_control",
-        "content_margin": [12, 3, 12, 3],
+        "content_margin": [16, 3, 16, 3],
         "max_margin_trim": 0,
         "hit_test_level": 0.0,
         "layer0.texture": "Theme - Piatto/Piatto Light/tab-inactive.png",
@@ -152,24 +149,67 @@
     {
         "class": "tab_label",
         "fade": true,
-        "fg": [120, 120, 120],
-        "shadow_color": [0, 0, 0],
-        "shadow_offset": [0, 0],
-        "font.italic": false,
-        "font.bold": false
+        "fg": [82, 82, 82],
+        "font.italic": false
     },
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["hover"]}],
-        "fg": [102, 102, 102],
-        "shadow_color": [0, 0, 0]
+        "fg": [25, 25, 25]
     },
     {
         "class": "tab_label",
         "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-        "fg": [102, 102, 102],
-        "shadow_color": [0, 0, 0],
-        "font.bold": true
+        "fg": [0, 0, 0]
+    },
+    {
+        "class": "tab_label",
+        "attributes": ["transient"],
+        "font.italic": true
+    },
+
+//
+// TAB SCROLLING
+//
+
+    // Tab dropdown
+    {
+        "class": "show_tabs_dropdown_button",
+        "content_margin": [9, 7, 8, 6],
+        "layer0.texture": "Theme - Piatto/Piatto Light/tabset-list.png",
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": 0
+    },
+    {
+        "class": "show_tabs_dropdown_button",
+        "attributes": ["hover"],
+        "layer0.texture": "Theme - Piatto/Piatto Light/tabset-list-hover.png"
+    },
+    // Tab scroll left
+    {
+        "class": "scroll_tabs_left_button",
+        "content_margin": [9, 7, 8, 6], //[9, 7, 8, 6]
+        "layer0.texture": "Theme - Piatto/Piatto Light/tabset-left.png",
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": 0
+    },
+    {
+        "class": "scroll_tabs_left_button",
+        "attributes": ["hover"],
+        "layer0.texture": "Theme - Piatto/Piatto Light/tabset-left-hover.png"
+    },
+    // Tab scroll right
+    {
+        "class": "scroll_tabs_right_button",
+        "content_margin": [9, 7, 8, 6],
+        "layer0.texture": "Theme - Piatto/Piatto Light/tabset-right.png",
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": 0
+    },
+    {
+        "class": "scroll_tabs_right_button",
+        "attributes": ["hover"],
+        "layer0.texture": "Theme - Piatto/Piatto Light/tabset-right-hover.png"
     },
 
 //
@@ -232,7 +272,7 @@
         "layer0.texture": "Theme - Piatto/Piatto Light/standard-puck-vertical.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [0, 10],
-        "content_margin": [4, 12],
+        "content_margin": [8, 12],
         "blur": false
     },
     // Standard horizontal scroll puck
@@ -241,7 +281,7 @@
         "attributes": ["horizontal"],
         "layer0.texture": "Theme - Piatto/Piatto Light/standard-puck-horizontal.png",
         "layer0.inner_margin": [10, 0],
-        "content_margin": [12, 4],
+        "content_margin": [12, 8],
         "blur": false
     },
 
@@ -283,8 +323,8 @@
         "settings": ["overlay_scroll_bars"],
         "layer0.texture": "Theme - Piatto/Piatto Light/overlay-puck-vertical.png",
         "layer0.inner_margin": [0, 5],
-        "content_margin": [4, 12],
-        "blur": false
+        "content_margin": [5, 20],
+        "blur": true
     },
     // Overlay horizontal puck
     {
@@ -293,8 +333,8 @@
         "attributes": ["horizontal"],
         "layer0.texture": "Theme - Piatto/Piatto Light/overlay-puck-horizontal.png",
         "layer0.inner_margin": [5, 0],
-        "content_margin": [12, 4],
-        "blur": false
+        "content_margin": [20, 5],
+        "blur": true
     },
     // Overlay light puck (for dark content)
     {
@@ -328,7 +368,7 @@
     {
         "class": "grid_layout_control",
         "border_size": 1,
-        "border_color": [209, 209, 212]
+        "border_color": [189, 189, 189]
     },
 
 //
@@ -337,7 +377,47 @@
 
     {
         "class": "minimap_control",
-        "viewport_color": [0, 0, 0, 20]
+        "settings": ["always_show_minimap_viewport"],
+        "viewport_color": [0, 0, 0, 35],
+        "viewport_opacity": 1.0
+    },
+    {
+        "class": "minimap_control",
+        "settings": ["!always_show_minimap_viewport"],
+        "viewport_color": [0, 0, 0, 35],
+        "viewport_opacity": { "target": 0.0, "speed": 10.0, "interpolation": "smoothstep" }
+    },
+    {
+        "class": "minimap_control",
+        "attributes": ["hover"],
+        "settings": ["!always_show_minimap_viewport"],
+        "viewport_opacity": 1.0
+    },
+
+//
+// DIALOG
+//
+
+    {
+        "class": "dialog",
+        "layer0.tint": [238, 238, 238],
+        "layer0.opacity": 1.0
+    },
+
+//
+// PROGRESS BAR
+//
+
+    {
+        "class": "progress_bar_control",
+        "layer0.tint": [193, 193, 193],
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "progress_gauge_control",
+        "layer0.tint": [70, 160, 225],
+        "layer0.opacity": 1.0,
+        "content_margin": [0, 6]
     },
 
 //
@@ -352,16 +432,12 @@
     // Text field labels
     {
         "class": "label_control",
-        "parents": [{"class": "panel_control"}],
-        "shadow_color": [250, 250, 250],
-        "shadow_offset": [0, 0]
+        "parents": [{"class": "panel_control"}]
     },
     // Button labels
     {
         "class": "label_control",
-        "parents": [{"class": "button_control"}],
-        "shadow_color": [245, 245, 245],
-        "shadow_offset": [0, 0]
+        "parents": [{"class": "button_control"}]
     },
 
 //
@@ -392,7 +468,7 @@
         "layer0.texture": "Theme - Piatto/Piatto Light/status-bar-background.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [2, 2],
-        "content_margin": [8, 6, 8, 6]
+        "content_margin": [8, 4, 8, 4]
     },
     // Status bar button
     {
@@ -403,9 +479,14 @@
     {
         "class": "label_control",
         "parents": [{"class": "status_bar"}],
-        "color": [80, 80, 80],
-        "shadow_color": [0, 0, 0],
-        "shadow_offset": [0, 0]
+        "color": [47, 47, 47]
+    },
+    // Status bar icon
+    {
+        "class": "panel_button_control",
+        "layer0.texture": "Theme - Piatto/Piatto Light/panels.png",
+        "layer0.opacity": 0.7,
+        "content_margin": [12, 8]
     },
 
 //
@@ -417,13 +498,13 @@
         "class": "sidebar_container",
         "layer0.texture": "Theme - Piatto/Piatto Light/sidebar-bg.png",
         "layer0.opacity": 1.0,
-        "layer0.inner_margin": [2, 2, 2, 2],
-        "content_margin": [0, 2, 1, 2]
+        "layer0.inner_margin": [1, 1, 2, 1],
+        "content_margin": [0, 7, 1, 0]
     },
     // Sidebar tree
     {
         "class": "sidebar_tree",
-        "row_padding": [10, 5],
+        "row_padding": [8, 6],
         "indent": 15,
         "indent_offset": 15,
         "indent_top_level": false
@@ -433,7 +514,7 @@
         "class": "tree_row",
         "layer0.texture": "Theme - Piatto/Piatto Light/sidebar-row-selected.png",
         "layer0.opacity": 0.0,
-       "layer0.inner_margin": [2, 2, 2, 2]
+        "layer0.inner_margin": [1, 1]
     },
     // Sidebar row selected
     {
@@ -444,24 +525,19 @@
     // Sidebar heading
     {
         "class": "sidebar_heading",
-        "color": [102, 102, 102],
-        "font.bold": true,
-        "shadow_color": [0, 0, 0],
-        "shadow_offset": [0, 0]
+        "color": [110, 126, 141],
+        "font.bold": true
     },
     // Sidebar heading selected
     {
         "class": "sidebar_heading",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "color": [102, 102, 102],
-        "shadow_color": [0, 0, 0]
+        "color": [255, 255, 255]
     },
     // Sidebar entry
     {
         "class": "sidebar_label",
-        "color": [102, 102, 102],
-        "shadow_color": [0, 0, 0],
-        "shadow_offset": [0, 0],
+        "color": [0, 0, 0],
         "font.bold": false,
         "font.italic": false
     },
@@ -469,35 +545,37 @@
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
-        "color": [102, 102, 102],
-        "font.bold": true
+        "color": [70, 86, 102]
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
-        "color": [52, 152, 219]
+        "color": [45, 56, 68]
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable"]}],
         "settings": ["bold_folder_labels"],
-        "color": [102, 102, 102],
+        "color": [110, 126, 141],
         "font.bold": true
     },
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["expandable", "hover"]}],
         "settings": ["bold_folder_labels"],
-        "color": [102, 102, 102]
+        "color": [81, 92, 103]
     },
     // Sidebar entry selected
     {
         "class": "sidebar_label",
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "color": [255, 255, 255],
-        "shadow_color": [0, 0, 0],
-        "shadow_offset": [0, 0],
-        "font.bold": true
+        "color": [255, 255, 255]
+    },
+    // Sidebar entry transient
+    {
+        "class": "sidebar_label",
+        "attributes": ["transient"],
+        "font.italic": true
     },
 
 //
@@ -570,24 +648,6 @@
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
         "layer0.texture": "Theme - Piatto/Piatto Light/group-closed-selected.png"
     },
-    // Sidebar folder closed
-    {
-        "class": "disclosure_button_control",
-        "settings": ["piatto_folder_icons"],
-        "layer0.texture": "Theme - Piatto/Piatto Light/folder-closed.png"
-    },
-    {
-        "class": "disclosure_button_control",
-        "settings": ["piatto_folder_icons"],
-        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.texture": "Theme - Piatto/Piatto Light/folder-closed-hover.png"
-    },
-    {
-        "class": "disclosure_button_control",
-        "settings": ["piatto_folder_icons"],
-        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Piatto/Piatto Light/folder-closed-selected.png"
-    },
     // Sidebar group open
     {
         "class": "disclosure_button_control",
@@ -606,26 +666,67 @@
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
         "layer0.texture": "Theme - Piatto/Piatto Light/group-open-selected.png"
     },
+    // Sidebar folder closed
+    {
+        "class": "icon_folder",
+        "layer0.texture": "Theme - Piatto/Piatto Light/folder-closed.png",
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 8]
+    },
+    {
+        "class": "icon_folder",
+        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+        "layer0.texture": "Theme - Piatto/Piatto Light/folder-closed-hover.png"
+    },
+    {
+        "class": "icon_folder",
+        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+        "layer0.texture": "Theme - Piatto/Piatto Light/folder-closed-selected.png"
+    },
     // Sidebar folder open
     {
-        "class": "disclosure_button_control",
-        "settings": ["piatto_folder_icons"],
-        "attributes": ["expanded"],
+        "class": "icon_folder",
+        "parents": [{"class": "tree_row", "attributes": ["expanded"]}],
         "layer0.texture": "Theme - Piatto/Piatto Light/folder-open.png"
     },
     {
-        "class": "disclosure_button_control",
-        "settings": ["piatto_folder_icons"],
-        "attributes": ["expanded"],
-        "parents": [{"class": "tree_row", "attributes": ["hover"]}],
+        "class": "icon_folder",
+        "parents": [{"class": "tree_row", "attributes": ["expanded", "hover"]}],
         "layer0.texture": "Theme - Piatto/Piatto Light/folder-open-hover.png"
     },
     {
-        "class": "disclosure_button_control",
-        "settings": ["piatto_folder_icons"],
-        "attributes": ["expanded"],
-        "parents": [{"class": "tree_row", "attributes": ["selected"]}],
+        "class": "icon_folder",
+        "parents": [{"class": "tree_row", "attributes": ["expanded", "selected"]}],
         "layer0.texture": "Theme - Piatto/Piatto Light/folder-open-selected.png"
+    },
+    // Sidebar folder loading
+    {
+        "class": "icon_folder_loading",
+        "layer0.texture":
+        {
+            "keyframes":
+            [
+                "Theme - Piatto/Piatto Light/spinner/spinner7.png",
+                "Theme - Piatto/Piatto Light/spinner/spinner6.png",
+                "Theme - Piatto/Piatto Light/spinner/spinner5.png",
+                "Theme - Piatto/Piatto Light/spinner/spinner4.png",
+                "Theme - Piatto/Piatto Light/spinner/spinner3.png",
+                "Theme - Piatto/Piatto Light/spinner/spinner2.png",
+                "Theme - Piatto/Piatto Light/spinner/spinner1.png",
+                "Theme - Piatto/Piatto Light/spinner/spinner.png"
+            ],
+            "loop": true,
+            "frame_time": 0.075,
+        },
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 8]
+    },
+    // Sidebar file icons
+    {
+        "class": "icon_file_type",
+        // layer0.texture is filled in by code with the relevant icon name
+        "layer0.opacity": 1.0,
+        "content_margin": [8, 8]
     },
 
 //
@@ -635,11 +736,11 @@
     // Default button state
     {
         "class": "button_control",
-        "content_margin": [6, 5, 6, 6],
+        "content_margin": [6, 8, 6, 8],
         "min_size": [75, 0],
         "layer0.texture": "Theme - Piatto/Piatto Light/btn-large.png",
         "layer0.opacity": 1.0,
-        "layer0.inner_margin": [6, 6]
+        "layer0.inner_margin": [4, 4]
     },
     // Pressed button state
     {
@@ -658,7 +759,21 @@
         "layer0.texture": "Theme - Piatto/Piatto Light/text-field.png",
         "layer0.opacity": 1.0,
         "layer0.inner_margin": [4, 5, 4, 3],
-        "content_margin": [3, 3, 6, 3]
+        "content_margin": [3, 4, 6, 4]
+    },
+
+    // Text input dropdown
+    {
+        "class": "dropdown_button_control",
+        "content_margin": [8, 8],
+        "layer0.texture": "Theme - Piatto/Piatto Light/text-field-list.png",
+        "layer0.opacity": 1.0,
+        "layer0.inner_margin": [4, 4]
+    },
+    {
+        "class": "dropdown_button_control",
+        "attributes": ["hover"],
+        "layer0.texture": "Theme - Piatto/Piatto Light/text-field-list-hover.png"
     },
 
 //
@@ -676,7 +791,7 @@
     // Quick panel background
     {
         "class": "overlay_control",
-        "settings": ["!piatto_retina_fix"],
+        "settings": ["!Piatto_retina_fix"],
         "layer0.texture": "Theme - Piatto/Piatto Light/quick-panel-background.png",
         "layer0.inner_margin": [12, 6, 12, 15],
         "layer0.opacity": 1.0,
@@ -688,7 +803,7 @@
     // Quick panel background (Retina fix)
     {
         "class": "overlay_control",
-        "settings": ["piatto_retina_fix"],
+        "settings": ["Piatto_retina_fix"],
         "layer0.tint": [238, 238, 238],
         "layer0.opacity": 1.0,
         "content_margin": [6, 8, 6, 6]
@@ -717,22 +832,22 @@
     },
     {
         "class": "quick_panel_label",
-        "fg": [102, 102, 102, 255],
-        "match_fg": [102, 102, 102, 255],
-        "selected_fg": [255, 255, 255, 255],
-        "selected_match_fg": [255, 255, 255, 255]
+        "fg": [50, 50, 50, 255],
+        "match_fg": [0, 0, 0, 255],
+        "selected_fg": [25, 25, 25, 255],
+        "selected_match_fg": [0, 0, 0, 255]
     },
     {
         "class": "quick_panel_path_label",
-        "fg": [102, 102, 102, 255],
-        "match_fg": [102, 102, 102, 255],
-        "selected_fg": [255, 255, 255, 255],
-        "selected_match_fg": [255, 255, 255, 255]
+        "fg": [150, 150, 150, 255],
+        "match_fg": [90, 90, 90, 255],
+        "selected_fg": [120, 120, 120, 255],
+        "selected_match_fg": [90, 90, 90, 255]
     },
     {
         "class": "quick_panel_score_label",
-        "fg": [102, 102, 102, 255],
-        "selected_fg": [255, 255, 255, 255]
+        "fg": [72, 139, 211, 255],
+        "selected_fg": [72, 139, 211, 255]
     },
 
 //
@@ -758,9 +873,7 @@
     {
         "class": "popup_control",
         "content_margin": [2, 2],
-        "layer0.texture": "Theme - Piatto/Piatto Light/autocomplete-background.png",
-        "layer0.tint": [250, 250, 250],
-        "layer0.inner_margin": [2, 2],
+        "layer0.tint": [255, 255, 255],
         "layer0.opacity": 1.0
     },
     {
@@ -769,9 +882,9 @@
     },
     {
         "class": "auto_complete_label",
-        "fg": [102, 102, 102],
-        "match_fg": [102, 102, 102],
-        "selected_fg": [255, 255, 255],
+        "fg": [51, 51, 51],
+        "match_fg": [0, 0, 0],
+        "selected_fg": [205, 226, 243],
         "selected_match_fg": [255, 255, 255]
     },
     {
@@ -794,9 +907,9 @@
     {
         "class": "icon_button_control",
         "layer0.texture": "Theme - Piatto/Piatto Light/btn-group-middle.png",
-        "layer0.inner_margin": [6, 6],
+        "layer0.inner_margin": [10, 10],
         "layer0.opacity": 1.0,
-        "content_margin": [3, 3]
+        "content_margin": [6, 6]
     },
     {
         "class": "icon_button_control",
@@ -808,7 +921,8 @@
         "class": "icon_button_control",
         "attributes": ["left"],
         "layer0.texture": "Theme - Piatto/Piatto Light/btn-group-left.png",
-        "content_margin": [4, 3, 3, 3]
+        "layer0.inner_margin": [10, 10],
+        "content_margin": [6, 6]
     },
     {
         "class": "icon_button_control",
@@ -820,7 +934,8 @@
         "class": "icon_button_control",
         "attributes": ["right"],
         "layer0.texture": "Theme - Piatto/Piatto Light/btn-group-right.png",
-        "content_margin": [3, 3, 4, 3]
+        "layer0.inner_margin": [10, 10],
+        "content_margin": [6, 6]
     },
     {
         "class": "icon_button_control",
@@ -832,12 +947,31 @@
         "class": "icon_button_control",
         "attributes": ["left", "right"],
         "layer0.texture": "Theme - Piatto/Piatto Light/btn-small.png",
-        "content_margin": [4, 3]
+        "layer0.inner_margin": [10, 10],
+        "content_margin": [6, 6]
     },
     {
         "class": "icon_button_control",
         "attributes": ["left", "right", "selected"],
         "layer0.texture": "Theme - Piatto/Piatto Light/btn-small-on.png"
+    },
+    // Panel close button
+    {
+        "class": "panel_close_button",
+        "layer0.texture": "Theme - Piatto/Piatto Light/panel-close.png",
+        "layer0.opacity": 0.85,
+        "content_margin": [14, 14]
+    },
+    {
+        "class": "panel_close_button",
+        "attributes": ["hover"],
+        "layer0.texture": "Theme - Piatto/Piatto Light/panel-close.png",
+        "layer0.opacity": 1.0
+    },
+    {
+        "class": "panel_close_button",
+        "attributes": ["pressed"],
+        "layer0.texture": "Theme - Piatto/Piatto Light/panel-close-pressed.png"
     },
 
 //

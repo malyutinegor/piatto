@@ -1,8 +1,11 @@
 # Piatto Theme
 
- Piatto is a very simple flat style theme for Sublime Text 2 and Sublime Text 3.
+ Piatto is a very simple flat style theme for Sublime Text 3 Build 3062+.
 
-Based on Soda Theme by Ian Hill [http://buymeasoda.com/](http://buymeasoda.com/)
+Based on Soda Theme by Ian Hill - [http://buymeasoda.com/](http://buymeasoda.com/)
+
+* File Type Icons based on Seti_UI - [https://github.com/ctf0/Seti_ST3](https://github.com/ctf0/Seti_ST3)
+* Color Schemes based on Flat/Flat Dark by Ricardo Muniz Crespo [http://kotarodesign.com](http://kotarodesign.com)
 
 ## Design
 
@@ -10,11 +13,9 @@ Based on Soda Theme by Ian Hill [http://buymeasoda.com/](http://buymeasoda.com/)
 
 ![Piatto Dark Theme](https://raw.github.com/samuelrafo/Piatto/master/images/piatto_dark.png)
 
-![Piatto Mandarine Theme](https://raw.github.com/samuelrafo/Piatto/master/images/piatto_mandarine.png)
-
 ## Installation
 
-Piatto theme is designed to work with the latest development builds of Sublime Text, including [Sublime Text 2](http://www.sublimetext.com/dev) and [Sublime Text 3](http://www.sublimetext.com/3dev).
+Piatto theme is designed to work with the latest development builds of Sublime Text 3 [Sublime Text 3](https://www.sublimetext.com/3), Build 3062+.
 
 ### Using Sublime Package Control
 
@@ -29,66 +30,21 @@ If you are using Will Bond's excellent [Sublime Package Control](http://wbond.ne
 
 ## Activating the theme
 
-To configure Sublime Text to use the theme, follow the instructions below for your specific version.
-
-### Sublime Text 2
-
-* Open your User Settings Preferences file `Sublime Text 2 -> Preferences -> Settings - User`
-* Add (or update) your theme entry to be `"theme": "Piatto Light.sublime-theme"`
-
-**Example Sublime Text 2 User Settings**
-
-    {
-        "theme": "Piatto Light.sublime-theme"
-    }
-
-### Sublime Text 3
+To configure Sublime Text to use the theme, follow the instructions.
 
 * Open your User Settings Preferences file `Sublime Text -> Preferences -> Settings - User`
-* Add (or update) your theme entry to be `"theme": "Piatto Light 3.sublime-theme"`
+* Add (or update) your theme entry to be `"theme": "Piatto Light.sublime-theme",
+"color_scheme": "Packages/Theme - Piatto/Piatto Light.tmTheme"`
 
-**Example Sublime Text 3 User Settings**
+**Example Sublime Text User Settings**
 
     {
-        "theme": "Piatto Dark 3.sublime-theme"
+        "theme": "Piatto Light.sublime-theme",
+		"color_scheme": "Packages/Theme - Piatto/Piatto Light.tmTheme",
+		"line_padding_top": 3,				// top line height
+		"line_padding_bottom": 3,			// bottom line height
+		"overlay_scroll_bars": "enabled",	// show scrollbars only when scrolling
+		"bold_folder_labels": true,			// bold folder labels
+		"highlight_modified_tabs":true,		// highlight modified tabs
+		"highlight_line": true,				// highlight the current line
     }
-
-### Sidebar Folder Icons
-
-Piatto Theme has the ability to use folder icons in the sidebar.
-
-If you'd like to use folder icons in the sidebar instead of the regular arrows, add the following custom setting to your `Settings - User` file:
-
-    "piatto_folder_icons": true
-
-![Piatto Folder Icons](https://raw.github.com/samuelrafo/Piatto/master/images/piatto_folder_icons.png)
-
-### Overlay Scrollbars
-
-If you'd like to use the overlay scrollbar, add the following custom setting to your Settings - User file:
-
-```javascript
-{
-    "overlay_scroll_bars": "enabled"
-}
-```
-
-## Optional
-
-
-### Bold folder labels
-
-```javascript
-{
-    "bold_folder_labels": true
-}
-```
-
-
-### Color Scheme
-
-```javascript
-{
-    "color_scheme": "Packages/Theme - Piatto/Piatto Light.tmTheme"
-}
-```

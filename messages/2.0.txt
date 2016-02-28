@@ -1,0 +1,5 @@
+v2.0 (28-02-2016)
+-------------------
+
+- Complete theme rework. More flat and clean.
+- Added file type icons.

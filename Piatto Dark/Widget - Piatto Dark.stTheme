@@ -7,28 +7,28 @@
 	<key>comment</key>
 	<string>A widget theme for the UI components of the Piatto Dark theme.</string>
 	<key>name</key>
-	<string>Soda Dark - Widget Theme</string>
+	<string>Piatto Dark - Widget Theme</string>
 	<key>settings</key>
 	<array>
 		<dict>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#262626</string>
+				<string>#FFFFFF</string>
 				<key>caret</key>
-				<string>#F8F8F8</string>
+				<string>#000000</string>
 				<key>foreground</key>
-				<string>#F8F8F8</string>
+				<string>#000000</string>
 				<key>invisibles</key>
-				<string>#3B3B3B</string>
+				<string>#E0E0E0</string>
 				<key>lineHighlight</key>
-				<string>#333333</string>
+				<string>#2D89D825</string>
 				<key>selection</key>
-				<string>#4C4F54</string>
+				<string>#a4d1ef</string>
 				<key>selectionBorder</key>
-				<string>#66666600</string>
+				<string>#b5d5ff00</string>
 				<key>inactiveSelection</key>
-				<string>#4a4a4a</string>
+				<string>#EDEDED</string>
 			</dict>
 		</dict>
 		<dict>
@@ -41,7 +41,7 @@
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
-				<string>#505C63</string>
+				<string>#0066FF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -52,7 +52,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#A7DBD8</string>
+				<string>#4271AE</string>
 			</dict>
 		</dict>
 		<dict>
@@ -61,7 +61,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#E0E4CC</string>
+				<string>#2C473E</string>
 			</dict>
 		</dict>
 		<dict>
@@ -70,7 +70,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#E0E4CC</string>
+				<string>#1D577D</string>
 			</dict>
 		</dict>
 		<dict>
@@ -79,7 +79,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#e9903c</string>
+				<string>#e47b18</string>
 			</dict>
 		</dict>
 	</array>
