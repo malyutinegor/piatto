@@ -16,9 +16,9 @@
 				<key>background</key>
 				<string>#FFFFFF</string>
 				<key>caret</key>
-				<string>#f1f1f1</string>
+				<string>#2b2b2b</string>
 				<key>foreground</key>
-				<string>#f1f1f1</string>
+				<string>#2b2b2b</string>
 				<key>invisibles</key>
 				<string>#E0E0E0</string>
 				<key>lineHighlight</key>
