@@ -1,4 +1,4 @@
-v2.0 (28-02-2016)
+v2.0
 -------------------
 
 - Complete theme rework. More flat and clean.
