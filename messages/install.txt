@@ -37,5 +37,5 @@ Activate the Piatto Theme by modifying your user preferences file, which you can
 ---------------
 
 * Piatto Theme based on Soda Theme by Ian Hill - http://buymeasoda.com/
-* File Type Icons based on Seti_UI - https://github.com/ctf0/Seti_ST3
-* Color Schemes based on Flat/Flat Dark by Ricardo Muniz Crespo http://kotarodesign.com
+** File Type Icons based on Seti_UI - https://github.com/ctf0/Seti_ST3
+*** Color Schemes based on Flat/Flat Dark by Ricardo Muniz Crespo http://kotarodesign.com

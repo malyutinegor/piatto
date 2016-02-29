@@ -1,4 +1,4 @@
 v2.0.1
 -------------------
 
-- Minor fixes in Light version
+- Minor fixes
