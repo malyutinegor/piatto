@@ -791,7 +791,7 @@
     // Quick panel background
     {
         "class": "overlay_control",
-        "settings": ["!Piatto_retina_fix"],
+        "settings": ["!piatto_retina_fix"],
         "layer0.texture": "Theme - Piatto/Piatto Dark/quick-panel-background.png",
         "layer0.inner_margin": [12, 6, 12, 15],
         "layer0.opacity": 1.0,
@@ -803,8 +803,8 @@
     // Quick panel background (Retina fix)
     {
         "class": "overlay_control",
-        "settings": ["Piatto_retina_fix"],
-        "layer0.tint": [55, 55, 55],
+        "settings": ["piatto_retina_fix"],
+        "layer0.tint": [67, 67, 67],
         "layer0.opacity": 1.0,
         "content_margin": [6, 8, 6, 6]
     },
@@ -816,13 +816,14 @@
     {
         "class": "quick_panel",
         "row_padding": [5, 2],
-        "layer0.tint": [241, 241, 241],
-        "layer0.opacity": 1.0
+        "layer0.tint": [33, 33, 33],
+        "layer0.opacity": 1.0,
+        "dark_content": true
     },
     {
         "class": "quick_panel_row",
         "layer0.texture": "Theme - Piatto/Piatto Dark/quick-panel-row.png",
-        "layer0.inner_margin": [2, 4, 2, 4],
+        "layer0.inner_margin": [2, 2, 2, 2],
         "layer0.opacity": 1.0
     },
     {
@@ -832,22 +833,22 @@
     },
     {
         "class": "quick_panel_label",
-        "fg": [212, 212, 212, 255],
-        "match_fg": [212, 212, 212, 255],
+        "fg": [241, 241, 241, 255],
+        "match_fg": [73, 163, 223, 255],
         "selected_fg": [241, 241, 241, 255],
         "selected_match_fg": [241, 241, 241, 255]
     },
     {
         "class": "quick_panel_path_label",
-        "fg": [212, 212, 212, 255],
-        "match_fg": [212, 212, 212, 255],
+        "fg": [241, 241, 241, 255],
+        "match_fg": [73, 163, 223, 255],
         "selected_fg": [241, 241, 241, 255],
         "selected_match_fg": [241, 241, 241, 255]
     },
     {
         "class": "quick_panel_score_label",
         "fg": [73, 163, 223, 255],
-        "selected_fg": [255, 255, 255, 255]
+        "selected_fg": [241, 241, 241, 255]
     },
 
 //
