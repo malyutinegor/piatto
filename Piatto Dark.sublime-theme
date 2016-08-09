@@ -874,7 +874,7 @@
     {
         "class": "popup_control",
         "content_margin": [2, 2],
-        "layer0.tint": [255, 255, 255],
+        "layer0.tint": [32, 32, 32],
         "layer0.opacity": 1.0
     },
     {
@@ -883,14 +883,14 @@
     },
     {
         "class": "auto_complete_label",
-        "fg": [51, 51, 51],
-        "match_fg": [0, 0, 0],
+        "fg": [200, 200, 200],
+        "match_fg": [255, 255, 255],
         "selected_fg": [205, 226, 243],
         "selected_match_fg": [255, 255, 255]
     },
     {
         "class": "table_row",
-        "layer0.texture": "Theme - Piatto/Piatto Dark/autocomplete-row-selected.png",
+        "layer0.tint": [0, 173, 131],
         "layer0.opacity": 0.0,
         "layer0.inner_margin": [3, 1]
     },
