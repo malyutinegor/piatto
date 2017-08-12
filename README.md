@@ -2,7 +2,7 @@
 
  Superflat Adventures is a very simple flat style theme for Sublime Text 3 Build 3062+.
 
-Based on [https://github.com/samuelrafo/piatto](Piatto Theme) by Samuel Rafo and [https://github.com/wilcoxky/Adventure_Time.tmTheme](Adventure Time) color scheme by Kyle Wilcox.
+Based on [Piatto Theme](https://github.com/samuelrafo/piatto) by Samuel Rafo and [Adventure Time](https://github.com/wilcoxky/Adventure_Time.tmTheme) color scheme by Kyle Wilcox.
 
 ## Design
 
