@@ -6,7 +6,7 @@ Based on [Piatto Theme](https://github.com/samuelrafo/piatto) by Samuel Rafo and
 
 ## Design
 
-![Superflat Adventures Theme]()
+![Superflat Adventures Theme](https://github.com/malyutinegor/superflat-adventures/raw/master/screenshot.png)
 
 ## Installation
 
