@@ -559,6 +559,108 @@
 				<string>#277BD3</string>
 			</dict>
 		</dict>
+		<!-- Markup scopes -->
+		<dict>
+			<key>name</key>
+			<string>Markup Error</string>
+			<key>scope</key>
+			<string>markup.error</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#a80000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markup Warning</string>
+			<key>scope</key>
+			<string>markup.warning</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ffae00</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markup Info</string>
+			<key>scope</key>
+			<string>markup.info</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#009933</string>
+			</dict>
+		</dict>
+		<!-- Sublimelinter markup -->
+		<dict>
+			<key>name</key>
+			<string>SublimeLinter Error</string>
+			<key>scope</key>
+			<string>sublimelinter.mark.error</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#a80000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>SublimeLinter Warning</string>
+			<key>scope</key>
+			<string>sublimelinter.mark.warning</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ffae00</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>SublimeLinter Gutter Mark</string>
+			<key>scope</key>
+			<string>sublimelinter.gutter-mark</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FFFFFF</string>
+			</dict>
+		</dict>
+		<!-- Diff markup -->
+		<dict>
+			<key>name</key>
+			<string>Diff Deleted</string>
+			<key>scope</key>
+			<string>markup.deleted</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#a80000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Diff Changed</string>
+			<key>scope</key>
+			<string>markup.changed</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ffae00</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Diff Inserted</string>
+			<key>scope</key>
+			<string>markup.inserted</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#009933</string>
+			</dict>
+		</dict>
 	</array>
 	<key>uuid</key>
 	<string>D8D5E82E-3D5B-46B5-B38E-8C841C21347D</string>
