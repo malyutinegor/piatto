@@ -12,6 +12,11 @@ Based on [Piatto Theme](https://github.com/samuelrafo/piatto) by Samuel Rafo and
 
 Superflat Adventures theme is designed to work with the latest development builds of Sublime Text 3 [Sublime Text 3](https://www.sublimetext.com/3), Build 3062+.
 
+### Using Package Control
+* Press ctrl+shift+c.
+* Enter "Package Control: Install Package".
+* Enter "Theme - Superflat Adventures"
+
 ### Dependencies
 
 Fonts:
